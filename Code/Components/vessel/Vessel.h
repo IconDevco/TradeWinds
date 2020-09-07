@@ -1,17 +1,17 @@
 #pragma once
 
 #include "CryEntitySystem/IEntityComponent.h"
-#include "Components/vessel/BoatStorageComponent.h"
-#include "Components/vessel/CrewCoordiantor.h"
+#include "Components/BoatStorageComponent.h"
+#include "Components/CrewCoordiantor.h"
 
-#include "Components/vessel/Engine.h"
-#include "Components/vessel/Rudder.h"
+#include "Components/Engine.h"
+#include "Components/Rudder.h"
 
 #include "DefaultComponents/Geometry/StaticMeshComponent.h"
 
 #include "CryAISystem/Components/IEntityListenerComponent.h"
 
-#include "utils/InteractiveInterface.h"
+#include "InteractiveInterface.h"
 
 
 //Represents a vessel and it's hull, as well as all of the other components that make up a working vessel

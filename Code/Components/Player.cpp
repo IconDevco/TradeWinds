@@ -368,7 +368,7 @@ IEntity* CPlayerComponent::GetEntityFromPointer()
 void CPlayerComponent::PilotVessel(IEntity* vessel)
 {
 	pPilotedVessel = vessel;
-	CryLog(ToString(vessel));
+	//CryLog(ToString(vessel));
 
 	TargetPilotedVessel();
 
@@ -539,7 +539,7 @@ HandleInputFlagChange(EInputFlag::MoveLeft, (EActionActivationMode)activationMod
 			CryLog("Clicked");
 			if (IEntity* pEntity = GetEntityFromPointer()) {
 				
-				CryLog(pEntity->GetName());
+				//CryLog(pEntity->GetName());
 				if (auto* pVessel = pEntity->GetComponent<CVessel>()) {
 					
 					SelectVessel(pVessel);
@@ -620,7 +620,7 @@ void CPlayerComponent::UpdateCamera(float frameTime)
 	//target the vessel
 	if (IsPilotingVessel()) {
 		Vec3 p = pPilotedVessel->GetWorldPos();
-		p.z += 7;
+		p.z += 4;
 			// p.z = waterLevel;
 		goalTransform.SetTranslation(p);
 
